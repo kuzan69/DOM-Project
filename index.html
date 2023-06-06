@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM - Projekt</title>
+  <!-- Länk till css fil -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div id="header">
+    <h1 id="addHeader">Hej jag heter Yosef</h1>
+    <p id="date"></p>
+    <img id="image" src="kuzan1.png" alt="The image failed to load, try again later!">
+  </div>
+
+  <!-- Div med alla knappar -->
+  <div class="center-big-div">
+    <div class="big-div">
+      <div class="column">
+        <!-- Knapp för att byta bakgrundsfärg -->
+        <button type="button" onclick="changeColor()" class="button">Change Background</button>
+        <!-- Knapp för att lägga till text "Hej jag heter Yosef" -->
+        <button type="button" onclick="addHeader()" class="button">Good vibes</button>
+        <!-- Knapp för att visa tid -->
+        <button type="button" onclick="showTime()" class="button">Time</button>
+      </div>
+      
+      <!-- Resten är samma sak, de gör vad texten visar -->
+      <div class="column">
+        <button type="button" onclick="changeImage()" class="button">Change picture</button>
+        <button type="button" onclick="removeImage()" class="button">Hide picture</button>
+        <button type="button" onclick="showImage()"class="button">Show picture</button>
+      </div>
+
+      <!-- Samma här -->
+      <div class="column">
+        <button type="button" onclick="changeHeader()" class="button">Header</button>
+        <button type="button" onclick="removeHeader()" class="button" class="button">Remove Header</button>
+        <button type="button" onclick="showHeader()" class="button" class="button">Show Header</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIv för "Tack" meddelande -->
+  <div id="thanksMsgDiv">
+    <h1 id="thanksMsg"></h1>
+  </div>
+  
+  <!-- Länk till JavaScript fil -->
+  <script src="index.js"></script>
+
+</body>
+</html>
